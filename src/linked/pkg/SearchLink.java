@@ -84,6 +84,7 @@ public class SearchLink implements LinkedItemList {
     @Override
     public void printList() {
 
+        System.out.println("-".repeat(30));
         System.out.printf("Head -> %s%n", head.getValue());
 
         Item currentItem = head;
@@ -95,5 +96,6 @@ public class SearchLink implements LinkedItemList {
             index++;
             currentItem = currentItem.getNext();
         }
+        System.out.println("-".repeat(30));
     }
 }
